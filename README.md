@@ -1,6 +1,6 @@
 # mcrefactor-face
 
-This page is live now at http://github.io/LDJenkins/mcrefactor-face !
+This page is live now at LDJenkins.github.io/mcrefactor-face !
 
 ## Project Description
 
