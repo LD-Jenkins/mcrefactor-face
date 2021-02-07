@@ -2,10 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /*! display: flex; */
-    /*! justify-content: center; */
-    /*! align-content: center; */
-    /*! text-align: center; */
 }
 
 html {
@@ -16,6 +12,7 @@ body {
     background-color: #d9dcd6;
 }
 
+/* flexbox used to give page responsiveness */
 .header {
     display: flex;
     flex-direction: row;
@@ -25,8 +22,8 @@ body {
     color: #ffffff;
 }
 
+/* 1rem = 16px defined in html rule */
 .header h1 {
-    /* display: inline-block; */
     font-size: 3rem;
 }
 
@@ -39,7 +36,7 @@ body {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .header nav ul {
@@ -48,7 +45,6 @@ body {
 }
 
 .header nav ul li {
-    /* display: inline-block; */
     margin-left: 25px;
 }
 
@@ -65,10 +61,6 @@ figure img {
     height: 100%;
     width: 100%;
     margin-bottom: 25px;
-    /* background-image: "../assets/images/digital-marketing-meeting.jpg"; */
-    /* background-size: cover;
-    */ /*! background-position: center; */
-    /*! max-height: 80vh; */
 }
 
 .main-aside-section {
@@ -84,42 +76,13 @@ figure img {
     margin-left: 20px;
 }
 
-/* .float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-} */
-
 .content div {
-    /* margin-bottom: 20px; */
     padding: 50px;
     height: 32%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
-
-/* .online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-} */
 
 .search-engine-optimization img {
     float: left;
@@ -148,20 +111,9 @@ figure img {
     font-size: 2.25rem;
 }
 
-/* .online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 2.25rem;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 2.25rem;
-} */
-
 .benefits {
     margin-right: 20px;
     padding: 20px;
-    /* clear: both; */
     float: right;
     width: 20%;
     height: 100%;
@@ -178,16 +130,6 @@ aside div {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-/* .benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-} */
 
 .benefit-lead h3 {
     margin-bottom: 10px;
@@ -222,8 +164,6 @@ aside div {
     max-width: 150px;
 }
 
-
-
 .footer {
     padding: 30px;
     clear: both;
@@ -235,12 +175,14 @@ aside div {
     font-size: 1.25rem;
 }
 
+/* changes orientation of header elements at screen width smaller than 1017px */
 @media screen and (max-width: 1017px) {
     .header {
       flex-direction: column;
     }
 }
 
+/* changes orientation of aside elements and adjusts position of some elements when screen width smaller than 911px */
 @media screen and (max-width: 911px) {
     .main-aside-section {
         flex-direction: column-reverse;
@@ -251,7 +193,6 @@ aside div {
         margin-left: 20px;
         width: 96%;
         display: flex;
-        /* width: ; */
         margin-right: 19px;
         justify-content: space-around;
         float: none;
